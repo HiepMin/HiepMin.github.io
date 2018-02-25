@@ -754,6 +754,7 @@ Responsive
 }
 @media (max-width: 500px){
     .content-title{padding: 2rem 0 !important;font-size: 1rem}
+    section#slider .btn-slider{left: 42%;}
     #about .right .info li i{margin-bottom: 1rem}
     #about .right .contact{padding:0 1rem;}
 }
