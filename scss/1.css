@@ -753,7 +753,7 @@ Responsive
     #about .right .info li i{margin-bottom: 7px;}
 }
 @media (max-width: 500px){
-    .content-title{padding: 2rem 0 !important;}
+    .content-title{padding: 2rem 0 !important;font-size: 1rem}
     #about .right .info li i{margin-bottom: 1rem}
     #about .right .contact{padding:0 1rem;}
 }
