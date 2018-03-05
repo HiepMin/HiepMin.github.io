@@ -90,7 +90,8 @@ p.mota:after {
     align-items: center;
     color: #fff;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     transition: 0.3s;
     background: transparent;
     cursor: pointer;
@@ -112,7 +113,8 @@ header.nav-icon {
     z-index: 10;
     background: transparent;
     cursor: pointer; 
-    perspective: 700px;
+    -webkit-perspective: 700px; 
+            perspective: 700px;
     transition: 0.5s all ease-in-out;
 }
 header.nav-icon.bien_thanh_trang{background:#555555; height: 50px;border-bottom: 2px solid #c6ff00;}
@@ -126,17 +128,20 @@ header.nav-icon .container nav {
     top: 100%;
     right: 0;
     z-index: 10;
-    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
     transition: 0.4s all linear;
     opacity: 0;
-    transform: rotateY(51deg);
-    transform-style: preserve-3d;
+    -webkit-transform: rotateY(51deg);
+            transform: rotateY(51deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     visibility: hidden;
     box-shadow: 0 40px 62px 2px #00000096;
     border-bottom: 4px solid #c6ff00;
     border-top: 2px solid #c6ff00;
 }
-header.nav-icon .container nav.quaylai{opacity: 1;visibility: visible;transform: rotateY(0);}
+header.nav-icon .container nav.quaylai{opacity: 1;visibility: visible;-webkit-transform: rotateY(0);transform: rotateY(0);}
 header.nav-icon .container nav ul {
     width: 100%;
     height: 100%;
@@ -247,7 +252,8 @@ header.nav-icon .container .burger-icon .burger {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     background: #c6ff00;
     transition: all 0.3s ease-in-out; 
 }
@@ -266,8 +272,8 @@ header.nav-icon .container .burger-icon:hover {background: rgba(0, 0, 0, 0.2); }
 header.nav-icon .container .burger-icon:hover .burger {text-shadow: 0 0 20px #c6ff00; }
 header.nav-icon .container .burger-icon.active {border-radius: 50%; }
 header.nav-icon .container .burger-icon.active .burger {background: rgba(0, 0, 0, 0); }
-header.nav-icon .container .burger-icon.active .burger:after, header.nav-icon .container .burger-icon.active .burger:before {top: 0;transform: rotate(-45deg); }
-header.nav-icon .container .burger-icon.active .burger:before {top: 0;transform: rotate(45deg); }
+header.nav-icon .container .burger-icon.active .burger:after, header.nav-icon .container .burger-icon.active .burger:before {top: 0;-webkit-transform: rotate(-45deg);transform: rotate(-45deg); }
+header.nav-icon .container .burger-icon.active .burger:before {top: 0;-webkit-transform: rotate(45deg);transform: rotate(45deg); }
 
 /*----------------
 
@@ -303,13 +309,15 @@ section#slider h1 {
     top: 50%;
     left: 50%;
     z-index: 2;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     text-shadow: 0 0 40px #c6ff00;
     position: relative; 
 }
 section#slider h1:after {width: 100%;height: 100%;display: block;content: " "; }
 section#slider .btn-slider {
-    animation: 1s infinite alternate arrow-doub;
+    -webkit-animation: 1s infinite alternate arrow-doub;
+            animation: 1s infinite alternate arrow-doub;
     transition: 0.4s;
     position: absolute;
     z-index: 9;
@@ -328,7 +336,7 @@ About
 
 
 #about{font-family: monts-reg}
-#about .title-about{animation-duration:1s }
+#about .title-about{-webkit-animation-duration:1s;animation-duration:1s }
 #about .right{padding: 2rem;box-sizing: border-box}
 #about .right h1{
   font-family: monts-reg;
@@ -337,17 +345,18 @@ About
   font-weight: bold;
   text-align: center;
   opacity: 0;
-  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
-#about .right h3{text-align: center;font-size: 120%;margin-bottom: 30px;opacity: 0;animation-delay: 1.2s;}
+#about .right h3{text-align: center;font-size: 120%;margin-bottom: 30px;opacity: 0;-webkit-animation-delay: 1.2s;animation-delay: 1.2s;}
 #about .right h3:after {display: block;content: ""; width: 4rem;height: 1px;background: #aeaeae;margin: 1rem auto; }
 #about .right .info{padding: 1rem 0 1rem 4rem; box-sizing: border-box;}
-#about .right .info li{margin-bottom: 1rem; opacity: 0; animation-delay: 1s; animation-duration: .8s}
+#about .right .info li{margin-bottom: 1rem; opacity: 0; -webkit-animation-delay: 1s; animation-delay: 1s; -webkit-animation-duration: .8s; animation-duration: .8s}
 #about .right .info li i{margin-right:20px}
-#about .right .info li:nth-child(2){animation-delay: 1s}
-#about .right .info li:nth-child(3){animation-delay: 1.2s}
-#about .right .info li:nth-child(4){animation-delay: 1.4s}
-#about .right .info li:nth-child(5){animation-delay: 1.6s}
+#about .right .info li:nth-child(2){-webkit-animation-delay: 1s;animation-delay: 1s}
+#about .right .info li:nth-child(3){-webkit-animation-delay: 1.2s;animation-delay: 1.2s}
+#about .right .info li:nth-child(4){-webkit-animation-delay: 1.4s;animation-delay: 1.4s}
+#about .right .info li:nth-child(5){-webkit-animation-delay: 1.6s;animation-delay: 1.6s}
 #about .right .contact{padding:0 5rem; box-sizing: border-box;display: flex;justify-content: center;align-items: center;}
 #about .right .contact li{
     width: 40px;
@@ -358,13 +367,14 @@ About
     justify-content: center;
     align-items:center;
     transition: 0.4s ease-in-out;
-    animation-duration: .7s;
+    -webkit-animation-duration: .7s;
+            animation-duration: .7s;
     opacity: 0;
 }
 #about .right ul.contact li a{color: #eee; transition:  0.4s;}
-#about .right ul.contact li:nth-child(1) {background: #4267B2;  border: 2px solid #4267B2;animation-delay: 1.2s}
-#about .right ul.contact li:nth-child(2) {background: #00ACED; border: 2px solid #00ACED;animation-delay: 1.4s}
-#about .right ul.contact li:nth-child(3) {background: #DC483C; border: 2px solid #DC483C;animation-delay: 1.6s}
+#about .right ul.contact li:nth-child(1) {background: #4267B2;  border: 2px solid #4267B2;-webkit-animation-delay: 1.2s;animation-delay: 1.2s}
+#about .right ul.contact li:nth-child(2) {background: #00ACED; border: 2px solid #00ACED;-webkit-animation-delay: 1.4s;animation-delay: 1.4s}
+#about .right ul.contact li:nth-child(3) {background: #DC483C; border: 2px solid #DC483C;-webkit-animation-delay: 1.6s;animation-delay: 1.6s}
 #about .right ul.contact li:hover{background: #eee}
 #about .right ul.contact li:hover:nth-child(1) a{color: #4267B2}
 #about .right ul.contact li:hover:nth-child(2) a{color: #00ACED}
@@ -372,7 +382,8 @@ About
 #about .left img{max-width: 100%}
 #about .left .hinhdaidien{
     opacity: 0;
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
     width: 60%;
     overflow: hidden;
     border-radius: 10px;
@@ -380,14 +391,14 @@ About
     transition: 0.4s;
     transition-delay: 0.3s;
 }
-#about .left .hinhdaidien.zoom{transform: translateX(0); opacity: 1;}
+#about .left .hinhdaidien.zoom{-webkit-transform: translateX(0);transform: translateX(0); opacity: 1;}
 #about .left {display: flex;justify-content: center;align-items: center; flex-direction: column;}
 #about .some-detail{margin-top: 3rem; color: #eaeaea;}
 #about .detail-left{display: flex;text-align: left;align-items: center;padding: 2rem;flex-direction: column;}
 #about .detail-left i{margin:0 15px;}
 #about .detail-right{display: flex;justify-content: center;align-items: center;}
 #about .detail-right img{box-shadow: 0 2px 7px 4px rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);}
-.left a.btn-contact{animation-duration: 1s; opacity: 0; animation-delay: .6s}
+.left a.btn-contact{-webkit-animation-duration: 1s;animation-duration: 1s; opacity: 0; -webkit-animation-delay: .6s; animation-delay: .6s}
 .btn-contact,.btn-contact:visited{
   display: flex;
   justify-content: center;
@@ -426,7 +437,8 @@ Skill
     left: 3%;
     z-index: 1;
     font-size: 2.5rem;
-    transform: translateY(-50%); 
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); 
     display: flex;
     align-items: center;
 }
@@ -439,13 +451,15 @@ Skill
     position: absolute;
     top: -205%;
     right: 12px;
-    transform: scale(0); 
+    -webkit-transform: scale(0);
+            transform: scale(0); 
   }
 #skill .progressBar .progress {
     position: absolute;
     top: 50%;
     left: 3px;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     z-index: 3;
     width: 0;
     height: 70%;
@@ -475,8 +489,8 @@ Project
     margin: 0 2rem;
     position: relative;
 }
-.block-btn-filter li.button:hover:after{transform: scale(1);}
-.block-btn-filter li.active.button:after{transform: scale(1);}
+.block-btn-filter li.button:hover:after{-webkit-transform: scale(1);transform: scale(1);}
+.block-btn-filter li.active.button:after{-webkit-transform: scale(1);transform: scale(1);}
 .block-btn-filter li.button:after{
     content: "";
     width: 100%;
@@ -486,7 +500,8 @@ Project
     bottom: -2px;
     left: 0;
     border-radius: 10px;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
     transition: all ease-in-out 0.3s;
 }
 .block-btn-filter h1{font-family: monts-thin;color: #eaeaea;font-size:300%;margin: 2rem 0;}
@@ -499,11 +514,12 @@ Project
     float: left;
     overflow: hidden;
     opacity: 0;
-    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
 }
-.one-block-project:nth-child(2){animation-delay: 0.7s}
-.one-block-project:nth-child(3){animation-delay: 1s}
-.one-block-project:nth-child(4){animation-delay: 1.3s}
+.one-block-project:nth-child(2){-webkit-animation-delay: 0.7s;animation-delay: 0.7s}
+.one-block-project:nth-child(3){-webkit-animation-delay: 1s;animation-delay: 1s}
+.one-block-project:nth-child(4){-webkit-animation-delay: 1.3s;animation-delay: 1.3s}
 .one-block-project .content-project{width: 100%;height: 100%;position: relative;cursor: pointer;transition: 0.4s;}
 .one-block-project:nth-child(1) .content-project{
     background: url(../images/temp-1.png) no-repeat top center;
@@ -538,7 +554,8 @@ Project
     position: absolute;
     z-index: 9;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -557,7 +574,7 @@ Project
 .content-project a.fa-heart{left: 10%;}
 .content-project a.fa-eye{right: 10%;}
 .content-project a:hover{background: #FFF;color: #000;}
-.content-project:hover{transform: scale(1.2);}
+.content-project:hover{-webkit-transform: scale(1.2);transform: scale(1.2);}
 .content-project:hover a.fa-heart{left: 30%;opacity: 1;visibility: visible}
 .content-project:hover a.fa-eye{right: 30%;opacity: 1;visibility: visible}
 .content-project:hover .nenden-project{visibility: visible;opacity: 1}
@@ -641,7 +658,8 @@ Popup
   z-index: 13;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
   width: 90%;
   height: 90%;
   background: #000;
@@ -721,15 +739,15 @@ a.btn-timeline:hover{box-shadow: none;}
 XỬ LÍ HIỆU ÚNG KẾT HỢP JS
 
 -------------------*/
-.hidden{transform: scale(0);width: 0; transform-origin: 50% 50%;height: 0;}
-.sohienra{animation: sohienlen 1s forwards; animation-delay: 1s}
+.hidden{-webkit-transform: scale(0);transform: scale(0);width: 0; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%;height: 0;}
+.sohienra{-webkit-animation: sohienlen 1s forwards;animation: sohienlen 1s forwards; -webkit-animation-delay: 1s; animation-delay: 1s}
 .popup_active{visibility: visible;opacity: 1}
 @-webkit-keyframes arrow-doub {
-  from {transform: translateY(0); }
-  to {transform: translateY(-50%); } }
+  from {-webkit-transform: translateY(0);transform: translateY(0); }
+  to {-webkit-transform: translateY(-50%);transform: translateY(-50%); } }
 @-webkit-keyframes sohienlen{
   from{}
-  to{transform: scale(1);}}
+  to{-webkit-transform: scale(1);transform: scale(1);}}
 /*----------------
 
 Responsive
@@ -758,53 +776,3 @@ Responsive
     #about .right .info li i{margin-bottom: 1rem}
     #about .right .contact{padding:0 1rem;}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*# sourceMappingURL=1.css.map */
