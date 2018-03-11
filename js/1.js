@@ -24,7 +24,7 @@ $(function(){
 
 	//XỬ LÍ HIỆU ỨNG KHI CLICK VÀO NÚT CHUYỂN SECTION
 	$("i.btn-slider").click(function(){
-		$("html,body").animate({scrollTop: $("#about").offset().top - 10}, 2000, "easeInOutExpo");
+		$("html,body").animate({scrollTop: $("#about").offset().top - 10}, 1500, "easeInOutExpo");
 	});
 
 
@@ -32,13 +32,13 @@ $(function(){
 	//XỬ LÍ HIỆU ỨNG KHI CLICK VÀO CÁC NÚT LINK ĐIỀU HƯỚNG Ở NAVBAR
 	$(".nav-icon li a").click(function(){
 		event.preventDefault();
-		$("html,body").animate({scrollTop: ($(this.hash).offset().top - $(".nav-icon").height() + 20)},2000, "easeInOutExpo");
+		$("html,body").animate({scrollTop: ($(this.hash).offset().top - $(".nav-icon").height() + 20)},1500, "easeInOutExpo");
 	});
 
 	//XỬ LÍ HIỆU ỨNG KHI CLICK VÀO CÁC NÚT CONTACT ME Ở PHẦN ABOUT ME
 	$(".btn-about").click(function(){
 		event.preventDefault();
-		$("html,body").animate({scrollTop: $("#contact").offset().top}, 2000, "easeInOutExpo");
+		$("html,body").animate({scrollTop: $("#contact").offset().top}, 1500, "easeInOutExpo");
 	});
 
 
@@ -107,7 +107,7 @@ $(function(){
 
 	//XỬ LÍ HIỆU ỨNG KHI CLICK VÀO NÚT TOP
 	$(".top").click(function(){
-		$("html,body").animate({scrollTop: 0}, 2000, "easeInOutExpo");
+		$("html,body").animate({scrollTop: 0}, 1500, "easeInOutExpo");
 	});
 
 
